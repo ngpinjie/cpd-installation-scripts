@@ -1,6 +1,11 @@
 # cpd-installation-scripts
 This repository provides shell scripts to streamline the installation of IBM Cloud Pak for Data on your Red Hat OpenShift cluster.  It automates tasks like setting up the environment, logging in, and installing key components like Analytics Engine and Watson Studio.
 
+# Pre-requisites
+You should have these setup:
+1. OpenShift Cluster (VMware on IBM Cloud) - UPI - Public (https://techzone.ibm.com/my/reservations/create/63a3a25a3a4689001740dbb3)
+2. Environment variables (found in install_cpd.sh Line 34)
+
 # CPD Installation Scripts
 
 This repository contains shell scripts to automate the installation of IBM Cloud Pak for Data on a Red Hat OpenShift cluster.
