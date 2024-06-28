@@ -4,7 +4,7 @@ This repository provides shell scripts to streamline the installation of IBM Clo
 # Pre-requisites
 You should have these setup:
 1. OpenShift Cluster (VMware on IBM Cloud) - UPI - Public (https://techzone.ibm.com/my/reservations/create/63a3a25a3a4689001740dbb3) with the following resources (https://imgur.com/a/wQEmgbU)
-3. Environment variables (found in install_cpd.sh Line 34)
+2. Environment variables (found in install_cpd.sh Line 34)
 
 # CPD Installation Scripts
 
@@ -29,12 +29,17 @@ git clone https://github.com/ngpinjie/cpd-installation-scripts.git
 cd cpd-installation-scripts
 ```
 
-2. Make the script executable:
+2. Update the environment variables (found in install_cpd.sh Line 34)
+```
+nano install_cpd.sh
+```
+
+3. Make the script executable:
 ```
 chmod +x install_cpd.sh
 ```
 
-3. Run the script:
+4. Run the script:
 ```
 ./install_cpd.sh
 ```
