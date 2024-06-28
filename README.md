@@ -25,7 +25,7 @@ This script performs the following tasks:
 ## Usage
 1. Clone the repository:
 ```
-git clone https://github.com/your_username/cpd-installation-scripts.git
+git clone https://github.com/ngpinjie/cpd-installation-scripts.git
 cd cpd-installation-scripts
 ```
 
