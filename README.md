@@ -20,12 +20,18 @@ This repository contains a script to automate the setup of IBM Cloud Pak for Dat
 ### install_cpd.sh
 
 This script performs the following tasks:
-1. Installs container runtime.
-2. Sets up a client workstation.
-3. Configures environment variables.
-4. Logs into OpenShift cluster.
-5. Applies necessary OLM and CR configurations.
-6. Installs various components like Analytics Engine, Watson Studio, DataStage, and more.
+1. Installs Docker as the container runtime.
+2. Sets up the cpd-cli for IBM Cloud Pak for Data.
+3. Creates and sources environment variables for the OpenShift cluster.
+4. Updates the global image pull secret with IBM entitlement credentials.
+5. Creates necessary projects (namespaces) in OpenShift.
+6. Installs Certificate Manager and License Service.
+7. Installs the Scheduling Service.
+8. Applies CRI-O settings to the cluster.
+9. Authorizes instance topology for Cloud Pak for Data.
+10. Sets up foundational services and ConfigMaps for Cloud Pak for Data.
+11. Installs Cloud Pak for Data platform operators and operands.
+12. Retrieves the URL and admin credentials for the Cloud Pak for Data instance.
 
 ## Usage
 1. Clone the repository:
