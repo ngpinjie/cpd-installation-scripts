@@ -34,25 +34,29 @@ git clone https://github.com/ngpinjie/cpd-installation-scripts.git
 cd cpd-installation-scripts
 ```
 
+
 2. Update the environment variables (found in install_cpd.sh Line 34)
-```
-nano install_cpd.sh
-```
 Update the following variables with your cluster details:
 - OCP_URL
 - OCP_USERNAME
 - OCP_PASSWORD
 - IBM_ENTITLEMENT_KEY
+```
+nano install_cpd.sh
+```
+
 
 3. Make the script executable and sets the file permissions to be readable, writable, and executable only by the owner.
 ```
 chmod 700 install_cpd.sh
 ```
 
+
 4. Run the script:
 ```
 ./install_cpd.sh
 ```
+
 
 5. Verify the Installation
 - Ensure that all components are installed and running correctly.
@@ -60,6 +64,7 @@ chmod 700 install_cpd.sh
 oc get nodes
 oc get all --all-namespaces
 ```
+
 
 6. Access IBM Cloud Pak for Data
 - Retrieve the URL and admin credentials for the IBM Cloud Pak for Data instance:
