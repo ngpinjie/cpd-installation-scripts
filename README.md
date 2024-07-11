@@ -34,9 +34,9 @@ cd cpd-installation-scripts
 nano install_cpd.sh
 ```
 
-3. Make the script executable:
+3. Make the script executable and sets the file permissions to be readable, writable, and executable only by the owner.
 ```
-chmod +x install_cpd.sh
+chmod 700 install_cpd.sh
 ```
 
 4. Run the script:
