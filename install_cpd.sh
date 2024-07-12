@@ -53,7 +53,7 @@ export STG_CLASS_FILE=ocs-storagecluster-cephfs
 export IBM_ENTITLEMENT_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 # Cloud Pak for Data version
-export VERSION=4.8.5
+export VERSION=4.8
 
 EOF
 
