@@ -31,12 +31,14 @@ cpd-cli manage restart-container
 
 # Creating an environment variables file
 cat << EOF > ./cpd_vars.sh
+# IBM Entitled Registry
+export IBM_ENTITLEMENT_KEY=
 # Cluster
-export OCP_URL=api.XXXXXXXXXXXXXXXXXXXXX.cloud.techzone.ibm.com:6443
+export OCP_URL=
+export OCP_PASSWORD=
 export OPENSHIFT_TYPE=self-managed
 export IMAGE_ARCH=amd64
 export OCP_USERNAME=kubeadmin
-export OCP_PASSWORD=XXXX-XXXX-XXXX-XXXX
 # Projects
 export PROJECT_CERT_MANAGER=ibm-cert-manager
 export PROJECT_LICENSE_SERVICE=ibm-licensing
@@ -46,8 +48,6 @@ export PROJECT_CPD_INST_OPERANDS=cpd-instance
 # Storage
 export STG_CLASS_BLOCK=ocs-storagecluster-ceph-rbd
 export STG_CLASS_FILE=ocs-storagecluster-cephfs
-# IBM Entitled Registry
-export IBM_ENTITLEMENT_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 # Cloud Pak for Data version
 export VERSION=4.8.5
 EOF
