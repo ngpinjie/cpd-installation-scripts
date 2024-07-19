@@ -63,6 +63,11 @@ chmod 700 install_cpd.sh
 ./install_cpd.sh
 ```
 
+(Alternatively) Run script in background
+```
+nohup ./install_cpd.sh > install_cpd.log 2>&1 &
+```
+
 
 5. Verify the Installation
 - Ensure that all components are installed and running correctly.
