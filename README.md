@@ -34,6 +34,11 @@ This script performs the following tasks:
 12. Retrieves the URL and admin credentials for the Cloud Pak for Data instance.
 
 ## Usage
+1. (Optional) Run as root user
+```
+sudo -i
+```
+
 1. Clone the repository:
 ```
 git clone https://github.com/ngpinjie/cpd-installation-scripts.git
