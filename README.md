@@ -39,14 +39,14 @@ This script performs the following tasks:
 sudo -i
 ```
 
-1. Clone the repository:
+2. Clone the repository:
 ```
 git clone https://github.com/ngpinjie/cpd-installation-scripts.git
 cd cpd-installation-scripts
 ```
 
 
-2. Update the environment variables (found in install_cpd.sh Line 34)
+3. Update the environment variables (found in install_cpd.sh Line 34)
 Update the following variables with your cluster details:
 - OCP_URL
 - OCP_USERNAME
@@ -57,13 +57,13 @@ nano install_cpd.sh
 ```
 
 
-3. Make the script executable and sets the file permissions to be readable, writable, and executable only by the owner.
+4. Make the script executable and sets the file permissions to be readable, writable, and executable only by the owner.
 ```
 chmod 700 install_cpd.sh
 ```
 
 
-4. Run the script:
+5. Run the script:
 ```
 ./install_cpd.sh
 ```
@@ -74,7 +74,7 @@ nohup ./install_cpd.sh > install_cpd.log 2>&1 &
 ```
 
 
-5. Verify the Installation
+6. Verify the Installation
 - Ensure that all components are installed and running correctly.
 ```
 oc get nodes
@@ -82,7 +82,7 @@ oc get all --all-namespaces
 ```
 
 
-6. Access IBM Cloud Pak for Data
+7. Access IBM Cloud Pak for Data
 - Retrieve the URL and admin credentials for the IBM Cloud Pak for Data instance:
 ```
 cpd-cli manage get-cpd-instance-details --cpd_instance_ns=${PROJECT_CPD_INST_OPERANDS} --get_admin_initial_credentials=true
