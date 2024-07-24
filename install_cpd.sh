@@ -244,24 +244,28 @@ verify_installation() {
   fi
 }
 
+# ####################################################################
+# Installation of services - MODIFY AS NEEDED
+# ####################################################################
+
 # Login to OCP
 login_ocp
 
-# Installing watsonx.data
-apply_olm "watsonx_data"
-apply_cr "watsonx_data"
+# Installing DataStage
+apply_olm "datastage_ent"
+apply_cr "datastage_ent"
 
-# Installing Analytics Engine Powered by Apache Spark
-apply_olm "analyticsengine"
-apply_cr "analyticsengine"
+# Installing IBM Watson Pipelines
+apply_olm "ws_pipelines"
+apply_cr "ws_pipelines"
 
-# Installing Watson Studio
-apply_olm "ws"
-apply_cr "ws"
+# Installing Db2 Warehouse
+apply_olm "db2wh"
+apply_cr "db2wh"
 
 # Verifying installations
-verify_installation "watsonx_data"
-verify_installation "analyticsengine"
-verify_installation "ws"
+verify_installation "datastage_ent"
+verify_installation "ws_pipelines"
+verify_installation "db2wh"
 
 echo "Installation and verification completed successfully."
