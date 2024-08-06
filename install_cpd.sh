@@ -9,7 +9,7 @@ EOF
 
 # Setting up a client workstation
 
-# Download Version 13.1.5 of the `cpd-cli`
+# Download Version 14.0.1.of the `cpd-cli`
 wget https://github.com/IBM/cpd-cli/releases/download/v14.0.1/cpd-cli-linux-EE-14.0.1.tgz
 
 # Extract the contents of the package to the directory where you want to run the `cpd-cli`.
