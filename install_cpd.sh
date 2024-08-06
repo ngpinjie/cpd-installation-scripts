@@ -10,7 +10,7 @@ EOF
 # Setting up a client workstation
 
 # Download Version 13.1.5 of the `cpd-cli`
-wget https://github.com/IBM/cpd-cli/releases/download/v13.1.5r1/cpd-cli-linux-EE-13.1.5.tgz
+wget https://github.com/IBM/cpd-cli/releases/download/v14.0.1/cpd-cli-linux-EE-14.0.1.tgz
 
 # Extract the contents of the package to the directory where you want to run the `cpd-cli`.
 tar xzvf cpd-cli-linux-EE-13.1.5.tgz
@@ -49,7 +49,7 @@ export PROJECT_CPD_INST_OPERANDS=cpd-instance
 export STG_CLASS_BLOCK=ocs-storagecluster-ceph-rbd
 export STG_CLASS_FILE=ocs-storagecluster-cephfs
 # Cloud Pak for Data version
-export VERSION=4.8.5
+export VERSION=5.0.1
 EOF
 
 # Confirm that the script does not contain any errors.
@@ -248,24 +248,24 @@ verify_installation() {
 # Installation of services - MODIFY AS NEEDED
 # ####################################################################
 
-# Login to OCP
-login_ocp
+# # Login to OCP
+# login_ocp
 
-# Installing DataStage
-apply_olm "datastage_ent"
-apply_cr "datastage_ent"
+# # Installing DataStage
+# apply_olm "datastage_ent"
+# apply_cr "datastage_ent"
 
-# Installing IBM Watson Pipelines
-apply_olm "ws_pipelines"
-apply_cr "ws_pipelines"
+# # Installing IBM Watson Pipelines
+# apply_olm "ws_pipelines"
+# apply_cr "ws_pipelines"
 
-# Installing Db2 Warehouse
-apply_olm "db2wh"
-apply_cr "db2wh"
+# # Installing Db2 Warehouse
+# apply_olm "db2wh"
+# apply_cr "db2wh"
 
-# Verifying installations
-verify_installation "datastage_ent"
-verify_installation "ws_pipelines"
-verify_installation "db2wh"
+# # Verifying installations
+# verify_installation "datastage_ent"
+# verify_installation "ws_pipelines"
+# verify_installation "db2wh"
 
-echo "Installation and verification completed successfully."
+# echo "Installation and verification completed successfully."
